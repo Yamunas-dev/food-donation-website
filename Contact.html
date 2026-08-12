@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Happy To Help</title>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./index.html">
+  <link rel="stylesheet" href="./About.html">
+  <link rel="stylesheet" href="./Donate.html">
+  <link rel="stylesheet" href="./Contact.css">
+  <link rel="stylesheet" href="./Request.html">
+  <link rel="stylesheet" href="./Volunteers.html">
+  <link rel="stylesheet" href="./Contact.html">
+
+</head>
+<body>
+
+
+<!-- Navbar -->
+<header>
+  <nav class="navbar">
+    <div class="logo">
+    <i class="fa-solid fa-hand-holding-heart"></i>
+    Happy To Help
+    </div>
+    
+
+    <ul class="nav-links">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./About.html">About</a></li>
+      <li><a href="./Donate.html">Donate Food</a></li>
+      <li><a href="./Request.html">Our Branches</a></li>
+      <li><a href="./Volunteers.html">Volunteers</a></li>
+      <li><a href="./Contact.html">Contact</a></li>
+    </ul>
+
+    <a href="./Donate.html" class="donate-btn" >Donate Now</a>
+  </nav>
+</header>
+
+
+
+  <!-- HERO SECTION -->
+
+        <section class="about">
+    <div class="about-content">
+        <h5>ABOUT US</h5>
+
+        <h1>
+            Together, We Can End <br>Food Waste & Feed <br> Happiness
+        </h1>
+
+        <p>
+            Happy To Help is a platform that connects food<br>donors, volunteers, NGOs and needy people to <br>make sure no food
+            goes to waste and no one <br>sleeps hungry.
+        </p>
+        <h6>WE WORK FOR THESE SMILES!</h6>
+
+        <button>Join Us In This Mission ❤ </button>
+    </div>
+
+</section>
+
+
+<section class="contact-section">
+    <div class="title">
+        <h2>CONTACT US</h2>
+        <p>We are here to help and support your donation journey.</p>
+    </div>
+
+    <div class="contact-container">
+
+        <!-- Left Side -->
+        <div class="contact-info">
+            <div class="box-title">GET IN TOUCH</div>
+
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+
+            
+                <div>
+                    <h3>Head Office</h3>
+                    
+                    <p>
+                        Food Donation Trust<br>
+                        123, Charity Street,<br>
+                        Koyambedu, Chennai,<br>
+                        Tamil Nadu - 641002
+                    </p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                    <h3>Phone</h3>
+                    <p>+91 98765 43210</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <i class="fab fa-whatsapp"></i>
+                <div>
+                    <h3>WhatsApp</h3>
+                    <p>+91 98765 43210</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <h3>Email</h3>
+                    <p>contact@charitytrust.org</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <i class="far fa-clock"></i>
+                <div>
+                    <h3>Working Hours</h3>
+                    <p> Monday - Sunday<br>
+                        9:00 AM - 6:00 PM
+                    </p>
+                    
+                </div>
+            </div>
+             <div class="info-item">
+                <i class="fa-solid fa-globe"></i>
+                <div>
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+        <p class="fa-brands fa-facebook-f"></p>
+          <p class="fa-brands fa-instagram"></p>
+          <p class="fa-brands fa-twitter"></p>
+          <p class="fa-brands fa-youtube"></p>
+          </div>
+                    
+                    
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Right Side -->
+        <div class="contact-form">
+            <div class="box-title">SEND US A MESSAGE</div>
+
+<form id="contactForm">
+
+    <label>Your Name</label>
+    <input type="text" id="name" placeholder="Enter your name">
+
+    <div class="row">
+        <div>
+            <label>Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email">
+        </div>
+
+        <div>
+            <label>Phone Number</label>
+            <input type="text" id="phone" placeholder="Enter your phone number">
+        </div>
+    </div>
+
+    <label>Subject</label>
+    <input type="text" id="subject" placeholder="Enter subject">
+
+    <label>Your Message</label>
+    <textarea id="message" placeholder="Type your message here..."></textarea>
+
+    <button type="submit">
+        <i class="fas fa-paper-plane"></i>
+        Send Message
+    </button>
+
+</form>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let phone = document.getElementById("phone").value.trim();
+    let subject = document.getElementById("subject").value.trim();
+    let message = document.getElementById("message").value.trim();
+
+    // Name Validation
+    if (name === "") {
+        alert("Please enter your name");
+        return;
+    }
+
+    // Email Validation
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (email === "") {
+        alert("Please enter your email");
+        return;
+    }
+
+    if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address");
+        return;
+    }
+
+    // Phone Validation
+    let phonePattern = /^[0-9]{10}$/;
+
+    if (phone === "") {
+        alert("Please enter your phone number");
+        return;
+    }
+
+    if (!phonePattern.test(phone)) {
+        alert("Phone number must be 10 digits");
+        return;
+    }
+
+    // Subject Validation
+    if (subject === "") {
+        alert("Please enter the subject");
+        return;
+    }
+
+    // Message Validation
+    if (message === "") {
+        alert("Please enter your message");
+        return;
+    }
+
+    console.log("Name:", name);
+    console.log("Email:", email);
+    console.log("Phone:", phone);
+    console.log("Subject:", subject);
+    console.log("Message:", message);
+
+    alert("Message Sent Successfully!");
+
+    document.getElementById("contactForm").reset();
+});
+</script>
+    </div>
+    </div>
+</section>
+
+    <!-- FAQ Section -->
+<section class="faq-section">
+
+        <div class="faq-container">
+
+            <!-- Left Side FAQ -->
+            
+      <div class="faq-left">
+    <h5>FAQS</h5>
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-box">
+
+        <div class="faq-item">
+            <button class="faq-question">
+                How can I donate food?
+                <span>⌄</span>
+            </button>
+            <div class="answer">
+                You can donate food by filling out our donation form or contacting us directly.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                What types of food do you accept?
+                <span>⌄</span>
+            </button>
+            <div class="answer">
+                We accept packaged food, fresh produce, non-perishable items, and cooked meals that meet safety guidelines.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                How can I request food assistance?
+                <span>⌄</span>
+            </button>
+            <div class="answer">
+                You can request food assistance through our website or by contacting our team.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                How can I become a volunteer?
+                <span>⌄</span>
+            </button>
+            <div class="answer">
+                Fill out the volunteer registration form on our website to join us.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Is my donation tax-deductible?
+                <span>⌄</span>
+            </button>
+            <div class="answer">
+                Yes, eligible donations may be tax-deductible, and a receipt will be provided.
+            </div>
+        </div>
+
+    </div>
+
+
+<script>
+const questions = document.querySelectorAll(".faq-question");
+
+questions.forEach(question => {
+    question.addEventListener("click", () => {
+
+        const currentItem = question.parentElement;
+
+        document.querySelectorAll(".faq-item").forEach(item => {
+            if(item !== currentItem){
+                item.classList.remove("active");
+            }
+        });
+
+        currentItem.classList.toggle("active");
+    });
+});
+</script>
+</script>
+            </div>
+
+            <!-- Right Side Quote -->
+            <div class="quote-card">
+                <img src="./img./image44.jpeg" alt="Volunteers">
+
+            </div>
+
+        </div>
+</div>
+   
+
+<script>
+document.getElementById("subscribeBtn").addEventListener("click", function(event){
+
+    event.preventDefault();
+
+    let email = document.getElementById("email").value.trim();
+
+    // Email validation pattern
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if(email === ""){
+        alert("Please enter your email address");
+        return;
+    }
+
+    if(!emailPattern.test(email)){
+        alert("Please enter a valid email address");
+        return;
+    }
+
+    console.log("Subscribed Email:", email);
+
+    alert("Thank you for subscribing!");
+
+    document.getElementById("email").value = "";
+});
+</script>
+
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+
+  <footer>
+
+    <div class="footer-container">
+
+      <div>
+
+        <div class="footer-logo">
+          <i class="fa-solid fa-hand-holding-heart"></i>
+          <span>Happy To Help</span>
+        </div>
+
+        <p>
+          Let's come together to reduce food
+          waste and feed the hungry.
+        </p>
+
+        <div class="social-icons">
+      <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://x.com"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+
+        </div>
+
+      </div>
+
+      <div class="footer-links">
+
+        <h3>Quick Links</h3>
+
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Donate Food</a>
+        <a href="#">Request Food</a>
+        <a href="#">Volunteers</a>
+        <a href="#">Contact</a>
+
+      </div>
+
+      <div class="footer-links">
+
+        <h3>Our Services</h3>
+
+        <a href="#">Donate Food</a>
+        <a href="#">Request Food</a>
+        <a href="#">Food Pickup</a>
+        <a href="#">Volunteer</a>
+        <a href="#">Support NGOs</a>
+
+      </div>
+
+      <div class="contact-info1">
+
+        <h3>Contact Us</h3>
+
+        <div>
+          <i class="fa-solid fa-phone"></i>
+          <p>+91 98765 43210</p>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-envelope"></i>
+          <p>hello@happytohelp.org</p>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-location-dot"></i>
+          <p>123, Charity Street,<br>
+                        Koyambedu, Chennai,<br>
+                        Tamil Nadu - 641002</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      © 2026 Happy To Help | Share Food, Spread Love   <i class="fa-solid fa-heart"></i>
+    </div>
+
+  </footer>
+
+</body>
+</html>
+
